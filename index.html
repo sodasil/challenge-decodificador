@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/media-queries.css">
+    <link rel="stylesheet" href="/styles/media-queries.css">
+</head>
+<body>
+
+    <div class="logo-alura">
+        <img src="/assets/logo-alura.png" alt="Logo Alura">
+    </div>
+
+    <main class="pagina__inicial">
+        <section class="pagina__inicial__inicio">
+            
+            <div class="pagina__inicial__texto">
+                <textarea class="texto" placeholder="Digite seu texto" spellcheck="false" id="textArea" cols="40"
+                    rows="7"></textarea>
+            </div>
+            
+            <div class="pagina__inicial__alerta">
+                <img src="/assets/icone-alerta.png" alt="Aviso">
+            </div>
+
+            <div class="pagina__inicial__btns">
+                <button onclick="encryptText()" class="botao-encrypt" id="botaoEncrypt" type="submit">Criptografar</button>
+                <button onclick="decryptText()" class="botao-decrypt" id="botaoDecrypt" type="submit">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="pagina__inicial__codigo">
+            <div class="pagina__inicial__coluna">
+                <img src="/assets/lupa.png" alt="Desenho Lupa">
+                <div class="pagina__inicial__info">
+                    <h2>Nenhuma mensagem encontrada</h2>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="pagina__copiar-resultado">
+            <div class="pagina__inicial__copiar-resultado">
+                <textarea readonly="true" class="resultado-texto"  spellcheck="false" id="copyArea" cols="25" rows="9"></textarea>
+                <button class="botao-copy" id="botaoCopy">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

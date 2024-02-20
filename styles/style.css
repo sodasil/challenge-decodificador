@@ -1,0 +1,179 @@
+body {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: rgb(217, 255, 205);
+    max-width: 100%;
+    margin: auto;
+}
+
+.pagina__inicial {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5% 0 0;
+    gap: 2.75rem;
+}
+
+.pagina__inicial__inicio {
+    display: flex;
+    flex-direction: column;
+    padding: 11.11% 0 0 3%;
+}
+
+.texto {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: darkblue;
+    text-transform: lowercase;
+    resize: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.texto::placeholder {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    color: darkblue;
+    text-transform: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.pagina__inicial__alerta {
+    display: flex;
+    align-items: center;
+    padding: 15px 0 15px 0;
+    gap: 8px;
+}
+
+.pagina__inicial__btns {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.botao-encrypt {
+    align-items: flex-start;
+    width: 50%;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    border: none;
+    background: darkblue;
+    cursor: pointer;
+    gap: 8px;
+    color: rgb(217, 255, 205);
+    text-align: center;
+    line-height: normal;
+    font-family: 'Inter', sans-serif;
+}
+
+.botao-encrypt:hover {
+    background-color: rgb(0, 174, 255);
+}
+
+.botao-decrypt {
+    align-items: flex-start;
+    width: 50%;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    border: none;
+    background: whitesmoke;
+    cursor: pointer;
+    gap: 8px;
+    color: darkblue;
+    text-align: center;
+    line-height: normal;
+    font-family: 'Inter', sans-serif;
+}
+
+.botao-decrypt:hover {
+    background-color: rgb(0, 174, 255);
+}
+
+.pagina__inicial__codigo {
+    padding: 40px 0 0 0;
+}
+
+.pagina__inicial__coluna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 876px;
+    flex-shrink: 0;
+
+    background-color: whitesmoke;
+    border-radius: 32px;
+    gap: 40px;
+}
+
+.pagina__inicial__info h2 {
+    text-align: center;
+    color: darkblue;
+    line-height: 120%;
+    padding: 17px;
+    font-family: 'Inter', sans-serif;
+}
+
+.pagina__inicial__info p {
+    text-align: center;
+    color: darkblue;
+    line-height: 150%;
+    padding: 0 40px;
+    font-family: 'Inter', sans-serif;
+}
+
+.pagina__copiar-resultado {
+    padding: 40px 0 0 0;
+    display: none;
+}
+
+.pagina__inicial__copiar-resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 876px;
+    flex-shrink: 0;
+    background-color: whitesmoke;
+    border-radius: 32px;
+    gap: 55px;
+}
+
+.pagina__inicial__copiar-resultado .resultado-texto {
+    background-color: transparent;
+    border: none;
+    font-weight: 400;
+    line-height: 150%;
+    color: darkblue;
+    text-transform: lowercase;
+    resize: none;
+    cursor: default;
+}
+
+.pagina__inicial__copiar-resultado .botao-copy {
+    width: 336px;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    border: 1px solid darkblue;
+    background: transparent;
+    cursor: pointer;
+    color: darkblue;
+    text-align: center;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.botao-copy:hover {
+    background-color: rgb(0, 174, 255);
+}
+
+.logo-alura img {
+    padding: 2.5rem 0 2.5rem 0;
+    cursor: pointer;
+}

@@ -1,0 +1,61 @@
+@media only screen and (max-width: 768px) {
+
+    body {
+        flex-direction: column;
+    }
+
+    .pagina__inicial {
+        flex-direction: column;
+        padding: 0 40px 0 40px;
+        gap: 0;
+    }
+
+    .pagina__inicial__inicio {
+        padding: 11.11% 0 0 0;
+    }
+
+    .pagina__inicial__texto .texto {
+        width: 100%;
+    }
+
+    .pagina__inicial__coluna {
+        height: 133px;
+        width: auto;
+        max-width: none;
+    }
+
+    .pagina__inicial__copiar-resultado {
+        width: auto;
+        height: 170px;
+        overflow: scroll;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .pagina__inicial__copiar-resultado .resultado-texto {
+        width: 100%;
+    }
+
+    .pagina__inicial__copiar-resultado .botao-copy {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+
+    .pagina__inicial__btns {
+        flex-direction: column;
+    }
+
+    .botao-encrypt,
+    .botao-decrypt {
+        width: 100%;
+    }
+
+    .pagina__inicial__coluna {
+        height: 186px;
+        width: auto;
+        max-width: none;
+    }
+}
