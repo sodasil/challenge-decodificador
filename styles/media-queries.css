@@ -40,7 +40,11 @@
         width: 100%;
     }
 
+    .figura-lupa {
+        display: none;
+    }
 }
+
 
 @media only screen and (max-width: 375px) {
 
@@ -57,5 +61,9 @@
         height: 186px;
         width: auto;
         max-width: none;
+    }
+
+    .figura-lupa {
+        display: none;
     }
 }
